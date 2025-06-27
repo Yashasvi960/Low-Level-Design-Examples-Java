@@ -1,6 +1,6 @@
 package libraryOperations;
 
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Member {
@@ -9,7 +9,7 @@ public class Member {
     private String name;
     private String memberShipType;
 
-    private List<Books> books;
+    private Map<String, Integer> books;
 
     private List<Member> memberList;
 
@@ -17,6 +17,7 @@ public class Member {
         this.id = id;
         this.name = name;
         this.memberShipType = memberShipType;
+        books = new HashMap<>();
     }
 
     public String getId() {
@@ -31,23 +32,23 @@ public class Member {
         return memberShipType;
     }
 
-    public void addBooksToMember(Books book) {
-        books.add(book);
+    public void addBook(Books book, int issuedDate) {
+        books.put(book.getName(), issuedDate);
     }
 
-    public void removeBooksFromMember(Books book) {
-        books.remove(book);
+
+
+    public int getAllBooksOverDued(int todayDate) {
+        int count = 0;
+        for(Map.Entry<String, Integer> entry: books.entrySet()) {
+            if(todayDate-entry.getValue()>14) {
+                count++;
+            }
+        }
+        return count;
     }
 
-    public List<Books> getAllBooksIssued() {
-        return books.stream()
-                .filter(book -> book != null)
-                .collect(Collectors.toList());
+    public int getAllBooks() {
+       return books.size();
     }
-
-//    public List<Books> getOverduedBooks(String days) {
-//        if(days>5) {
-//
-//        }
-//    }
 }

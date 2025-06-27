@@ -6,11 +6,11 @@ import java.util.stream.Collectors;
 
 public class Library {
 
-    private List<Books> books;
+    private List<String> books;
 
     private List<Member> memberList;
 
-    private Library() {
+    public Library() {
         books = new ArrayList<>();
         memberList = new ArrayList<>();
     }
@@ -25,5 +25,21 @@ public class Library {
         if (memberList != null) {
             memberList.remove(member);
         }
+    }
+
+    public void addBook(Books book) {
+        if (books != null) {
+            books.add(book.getName());
+        }
+    }
+
+    public void removeBook(Books book) {
+        if (books != null) {
+            books.remove(book);
+        }
+    }
+
+    public List<String> getAllBooks() {
+        return books;
     }
 }
