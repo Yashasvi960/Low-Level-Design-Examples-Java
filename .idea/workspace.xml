@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00189b0e-02f9-4f6b-aad2-cc2c523f7337" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/kafkaDesign/Broker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kafkaDesign/Consumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kafkaDesign/KafkaMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kafkaDesign/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kafkaDesign/Producer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kafkaDesign/Topic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/websocket/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/websocket/WebSocketClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/websocket/WebSocketMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/websocket/WebSocketServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/websocket/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +75,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.KafkaMain">
+  <component name="RunManager" selected="Application.WebSocketMain">
     <configuration name="ATMMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="atmDesign.ATMMain" />
       <module name="untitled.main" />
@@ -129,8 +128,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WebSocketMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="websocket.WebSocketMain" />
+      <module name="untitled.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="websocket.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WebSocketMain" />
         <item itemvalue="Application.KafkaMain" />
         <item itemvalue="Application.MessageQueueMain" />
         <item itemvalue="Application.PubSubMain" />
